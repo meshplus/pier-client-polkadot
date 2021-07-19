@@ -1,0 +1,27 @@
+[package]
+name = "pier-client-polkadot"
+version = "0.1.0"
+authors = ["DiyiWi <809290733@qq.com>"]
+publish = false
+edition = "2018"
+
+[lib]
+doctest = false
+test = false
+
+[dependencies]
+grpc = "0.8.3"
+grpc-protobuf = "0.8.3"
+protobuf        = "~2.18.2"
+futures         = "0.3.*"
+tls-api            = "0.4.*"
+tls-api-native-tls = "0.4.*"
+httpbis         = "~0.9"
+env_logger      = "~0.5"
+
+[build-dependencies]
+protoc-rust-grpc = "0.8.3"
+
+[[bin]]
+name = "plugin_server"
+test = false
